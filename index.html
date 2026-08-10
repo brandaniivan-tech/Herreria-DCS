@@ -1,0 +1,2239 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <!-- SEO Básico -->
+  <title>Herrería Artística DCS | Mantenimiento Integral - Zona Oeste, Zona Norte y CABA</title>
+  <meta name="description" content="Herrería artística, techos de chapa y policarbonato, Durlock, pintura e impermeabilización. Trabajos en taller y a domicilio con presupuestos sin cargo." />
+  <meta name="keywords" content="herrería, herrero a domicilio, techos policarbonato, durlock, impermeabilización, pintura, Zona Oeste, Zona Norte, CABA" />
+  <meta name="author" content="Herrería Artística DCS" />
+
+  <!-- Favicon SVG Integrado -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230b132b'/><path d='M30 70 L70 30 M25 35 L40 20 L55 35 L40 50 Z' stroke='%23f59e0b' stroke-width='8' fill='none' stroke-linecap='round'/><circle cx='70' cy='30' r='6' fill='%23fbbf24'/></svg>" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Outfit -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       VARIABLES Y ESTILOS GLOBALES
+       ========================================================================== */
+    :root {
+      /* Colores Principales (Azul Oscuro, Gris Oscuro, Blanco, Amarillo/Dorado) */
+      --color-primary-dark: #0b132b;    /* Azul muy oscuro */
+      --color-primary-navy: #1c2541;    /* Azul noche */
+      --color-bg-dark: #0f172a;         /* Gris slate muy oscuro */
+      --color-card-bg: #1e293b;        /* Gris slate card */
+      --color-card-hover: #26334d;     /* Card hover */
+      --color-accent-gold: #f59e0b;     /* Amarillo / Dorado principal */
+      --color-accent-gold-hover: #d97706; /* Dorado oscuro */
+      --color-accent-yellow: #fbbf24;   /* Amarillo brillo */
+      --color-text-white: #f8fafc;     /* Blanco principal */
+      --color-text-muted: #94a3b8;     /* Gris texto secundario */
+      --color-border: rgba(245, 158, 11, 0.2);
+      --color-whatsapp: #25d366;
+      --color-whatsapp-hover: #1da851;
+
+      /* Fuentes */
+      --font-title: 'Outfit', -apple-system, sans-serif;
+      --font-body: 'Plus Jakarta Sans', -apple-system, sans-serif;
+
+      /* Transiciones y Sombras */
+      --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      --shadow-card: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+      --shadow-gold: 0 10px 25px -5px rgba(245, 158, 11, 0.3);
+    }
+
+    /* Reset Básico */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background-color: var(--color-bg-dark);
+      color: var(--color-text-white);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    /* Contenedor General */
+    .container {
+      width: 100%;
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Títulos de Sección */
+    .section-header {
+      text-align: center;
+      max-width: 750px;
+      margin: 0 auto 3.5rem auto;
+    }
+
+    .section-badge {
+      display: inline-block;
+      background: rgba(245, 158, 11, 0.12);
+      color: var(--color-accent-gold);
+      border: 1px solid rgba(245, 158, 11, 0.3);
+      padding: 0.35rem 1rem;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 0.75rem;
+    }
+
+    .section-title {
+      font-family: var(--font-title);
+      font-size: clamp(2rem, 4vw, 2.75rem);
+      font-weight: 800;
+      color: var(--color-text-white);
+      line-height: 1.2;
+      margin-bottom: 1rem;
+    }
+
+    .section-subtitle {
+      color: var(--color-text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Botones Generales */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 0.9rem 1.8rem;
+      border-radius: 8px;
+      font-family: var(--font-title);
+      font-size: 1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+      border: none;
+      text-align: center;
+    }
+
+    .btn-gold {
+      background: linear-gradient(135deg, var(--color-accent-gold), var(--color-accent-yellow));
+      color: var(--color-primary-dark);
+      box-shadow: var(--shadow-gold);
+    }
+
+    .btn-gold:hover {
+      background: linear-gradient(135deg, var(--color-accent-yellow), var(--color-accent-gold));
+      transform: translateY(-3px);
+      box-shadow: 0 15px 30px -5px rgba(245, 158, 11, 0.4);
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--color-text-white);
+      border: 2px solid rgba(255, 255, 255, 0.2);
+    }
+
+    .btn-outline:hover {
+      border-color: var(--color-accent-gold);
+      color: var(--color-accent-gold);
+      background: rgba(245, 158, 11, 0.05);
+      transform: translateY(-3px);
+    }
+
+    .btn-whatsapp {
+      background-color: var(--color-whatsapp);
+      color: #ffffff;
+      box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+    }
+
+    .btn-whatsapp:hover {
+      background-color: var(--color-whatsapp-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 12px 25px rgba(37, 211, 102, 0.4);
+    }
+
+    /* ==========================================================================
+       HEADER Y NAVEGACIÓN
+       ========================================================================== */
+    .header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 1000;
+      transition: var(--transition-smooth);
+      padding: 1.25rem 0;
+      background: rgba(11, 19, 43, 0.85);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .header.scrolled {
+      padding: 0.8rem 0;
+      background: rgba(11, 19, 43, 0.96);
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+      border-bottom: 1px solid var(--color-border);
+    }
+
+    .nav-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    /* Logo */
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      font-family: var(--font-title);
+      font-weight: 800;
+      font-size: 1.35rem;
+      color: var(--color-text-white);
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      background: linear-gradient(135deg, var(--color-primary-navy), var(--color-primary-dark));
+      border: 2px solid var(--color-accent-gold);
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--color-accent-gold);
+    }
+
+    .logo-text span {
+      color: var(--color-accent-gold);
+    }
+
+    .logo-subtitle {
+      display: block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      color: var(--color-text-muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    /* Menú Desktop */
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+
+    .nav-link {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: var(--color-text-white);
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+
+    .nav-link:hover {
+      color: var(--color-accent-gold);
+    }
+
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      width: 0;
+      height: 2px;
+      background-color: var(--color-accent-gold);
+      transition: var(--transition-smooth);
+    }
+
+    .nav-link:hover::after {
+      width: 100%;
+    }
+
+    /* Menú Hamburguesa Móvil */
+    .hamburger-btn {
+      display: none;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+      z-index: 1001;
+    }
+
+    .hamburger-icon {
+      width: 28px;
+      height: 20px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .hamburger-icon span {
+      display: block;
+      width: 100%;
+      height: 3px;
+      background-color: var(--color-text-white);
+      border-radius: 2px;
+      transition: var(--transition-smooth);
+    }
+
+    .hamburger-btn.active .hamburger-icon span:nth-child(1) {
+      transform: translateY(8.5px) rotate(45deg);
+      background-color: var(--color-accent-gold);
+    }
+
+    .hamburger-btn.active .hamburger-icon span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .hamburger-btn.active .hamburger-icon span:nth-child(3) {
+      transform: translateY(-8.5px) rotate(-45deg);
+      background-color: var(--color-accent-gold);
+    }
+
+    /* ==========================================================================
+       HERO PRINCIPAL
+       ========================================================================== */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      padding: 8rem 0 4rem 0;
+      background: linear-gradient(to right, rgba(11, 19, 43, 0.92) 30%, rgba(11, 19, 43, 0.75)),
+                  url('images/21 herreria.jpeg') center/cover no-repeat;
+      overflow: hidden;
+    }
+
+    /* Hero Grid Layout & Logo Placeholder */
+    .hero-grid {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2.5rem;
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-logo-wrapper {
+      order: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .hero-logo-card {
+      position: relative;
+      width: 280px;
+      height: 280px;
+      max-width: 100%;
+      aspect-ratio: 1 / 1;
+      padding: 1rem;
+      background: rgba(15, 23, 42, 0.65);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(245, 158, 11, 0.35);
+      border-radius: 24px;
+      box-shadow: 0 20px 40px -15px rgba(0, 0, 0, 0.6),
+                  0 0 30px rgba(245, 158, 11, 0.18);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .hero-logo-card:hover {
+      transform: translateY(-6px);
+      border-color: rgba(245, 158, 11, 0.65);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.75),
+                  0 0 45px rgba(245, 158, 11, 0.35);
+    }
+
+    .hero-logo-img {
+      width: 120%;
+      height: 120%;
+      object-fit: contain;
+      border-radius: 16px;
+    }
+
+    .hero-content {
+      order: 2;
+      width: 100%;
+      max-width: 700px;
+      position: relative;
+      z-index: 2;
+    }
+
+    @media (min-width: 992px) {
+      .hero-grid {
+        display: grid;
+        grid-template-columns: 1fr 300px;
+        gap: 3.5rem;
+        align-items: center;
+      }
+
+      .hero-content {
+        order: 1;
+      }
+
+      .hero-logo-wrapper {
+        order: 2;
+      }
+
+      .hero-logo-card {
+        width: 300px;
+        height: 300px;
+      }
+    }
+
+    .hero-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(245, 158, 11, 0.15);
+      border: 1px solid var(--color-accent-gold);
+      color: var(--color-accent-yellow);
+      padding: 0.4rem 1.2rem;
+      border-radius: 30px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-title {
+      font-family: var(--font-title);
+      font-size: clamp(2.5rem, 5vw, 4rem);
+      font-weight: 800;
+      line-height: 1.1;
+      color: var(--color-text-white);
+      margin-bottom: 1rem;
+    }
+
+    .hero-title span {
+      color: var(--color-accent-gold);
+      background: linear-gradient(135deg, var(--color-accent-yellow), var(--color-accent-gold));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .hero-subtitle {
+      font-size: clamp(1.2rem, 2.5vw, 1.6rem);
+      font-weight: 600;
+      color: var(--color-text-muted);
+      margin-bottom: 1.25rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .hero-description {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+      margin-bottom: 2.2rem;
+      line-height: 1.7;
+    }
+
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      margin-bottom: 3rem;
+    }
+
+    .hero-badges {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 150px));
+      gap: 1rem;
+      padding-top: 1.5rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .hero-badge-item {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .hero-badge-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--color-accent-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .hero-badge-text {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--color-text-white);
+    }
+
+    /* ==========================================================================
+       SECCIÓN SERVICIOS
+       ========================================================================== */
+    .services {
+      padding: 6rem 0;
+      background-color: var(--color-bg-dark);
+      position: relative;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .service-card {
+      background: var(--color-card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 2.2rem;
+      transition: var(--transition-smooth);
+      cursor: pointer;
+      position: relative;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .service-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      background: linear-gradient(90deg, var(--color-accent-gold), var(--color-accent-yellow));
+      opacity: 0;
+      transition: var(--transition-smooth);
+    }
+
+    .service-card:hover {
+      transform: translateY(-8px);
+      background: var(--color-card-hover);
+      border-color: var(--color-border);
+      box-shadow: var(--shadow-card);
+    }
+
+    .service-card:hover::before {
+      opacity: 1;
+    }
+
+    .service-icon-wrapper {
+      width: 64px;
+      height: 64px;
+      border-radius: 14px;
+      background: rgba(245, 158, 11, 0.1);
+      border: 1px solid rgba(245, 158, 11, 0.25);
+      color: var(--color-accent-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      transition: var(--transition-smooth);
+    }
+
+    .service-card:hover .service-icon-wrapper {
+      background: var(--color-accent-gold);
+      color: var(--color-primary-dark);
+      transform: scale(1.08);
+    }
+
+    .service-title {
+      font-family: var(--font-title);
+      font-size: 1.35rem;
+      font-weight: 700;
+      margin-bottom: 0.8rem;
+      color: var(--color-text-white);
+    }
+
+    .service-description {
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+    }
+
+    .service-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--color-accent-gold);
+      font-size: 0.9rem;
+      font-weight: 700;
+      transition: var(--transition-smooth);
+    }
+
+    .service-card:hover .service-link {
+      gap: 0.8rem;
+      color: var(--color-accent-yellow);
+    }
+
+    /* ==========================================================================
+       MODAL DE SERVICIO (VENTANA EMERGENTE)
+       ========================================================================== */
+    .modal-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(11, 19, 43, 0.85);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1.5rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition-smooth);
+    }
+
+    .modal-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .modal-container {
+      background: var(--color-card-bg);
+      border: 1px solid var(--color-border);
+      border-radius: 20px;
+      width: 100%;
+      max-width: 650px;
+      padding: 2.5rem;
+      position: relative;
+      transform: translateY(20px);
+      transition: var(--transition-smooth);
+      box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.7);
+      max-height: 90vh;
+      overflow-y: auto;
+    }
+
+    .modal-overlay.active .modal-container {
+      transform: translateY(0);
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 1.25rem;
+      right: 1.25rem;
+      background: rgba(255, 255, 255, 0.1);
+      border: none;
+      color: var(--color-text-white);
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition-smooth);
+    }
+
+    .modal-close:hover {
+      background: var(--color-accent-gold);
+      color: var(--color-primary-dark);
+    }
+
+    .modal-header-icon {
+      width: 56px;
+      height: 56px;
+      border-radius: 12px;
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--color-accent-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.2rem;
+    }
+
+    .modal-title {
+      font-family: var(--font-title);
+      font-size: 1.75rem;
+      font-weight: 800;
+      margin-bottom: 1rem;
+      color: var(--color-text-white);
+    }
+
+    .modal-body-text {
+      color: var(--color-text-muted);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem;
+    }
+
+    .modal-list {
+      list-style: none;
+      margin-bottom: 2rem;
+    }
+
+    .modal-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.75rem;
+      color: var(--color-text-white);
+      font-size: 0.95rem;
+      margin-bottom: 0.8rem;
+    }
+
+    .modal-list li svg {
+      color: var(--color-accent-gold);
+      flex-shrink: 0;
+      margin-top: 3px;
+    }
+
+    /* ==========================================================================
+       SECCIÓN POR QUÉ ELEGIRNOS (VENTAJAS)
+       ========================================================================== */
+    .why-us {
+      padding: 6rem 0;
+      background: linear-gradient(180deg, var(--color-bg-dark) 0%, var(--color-primary-dark) 100%);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .why-us-grid {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+    }
+
+    .advantages-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+      width: 100%;
+      max-width: 1000px;
+    }
+
+    .advantage-card {
+      background: rgba(30, 41, 59, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 14px;
+      padding: 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      transition: var(--transition-smooth);
+    }
+
+    .advantage-card:hover {
+      background: var(--color-card-bg);
+      border-color: var(--color-border);
+      transform: translateY(-4px);
+    }
+
+    .advantage-check {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: rgba(245, 158, 11, 0.15);
+      color: var(--color-accent-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      font-weight: bold;
+    }
+
+    .advantage-title {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-text-white);
+      margin-bottom: 0.2rem;
+    }
+
+    .advantage-desc {
+      font-size: 0.88rem;
+      color: var(--color-text-muted);
+    }
+
+    .experience-card {
+      background: linear-gradient(135deg, var(--color-primary-navy), var(--color-primary-dark));
+      border: 2px solid var(--color-accent-gold);
+      border-radius: 20px;
+      padding: 3rem 2rem;
+      text-align: center;
+      box-shadow: var(--shadow-card);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .experience-number {
+      font-family: var(--font-title);
+      font-size: 4.5rem;
+      font-weight: 800;
+      color: var(--color-accent-gold);
+      line-height: 1;
+      margin-bottom: 0.5rem;
+    }
+
+    .experience-label {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-text-white);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 1rem;
+    }
+
+    .experience-subtext {
+      color: var(--color-text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* ==========================================================================
+       SECCIÓN ZONAS DE TRABAJO
+       ========================================================================== */
+    .zones {
+      padding: 6rem 0;
+      background-color: var(--color-bg-dark);
+    }
+
+    .zones-wrapper {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+
+    @media (max-width: 992px) {
+      .zones-wrapper {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .zones-cards {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+
+    .zone-item {
+      background: var(--color-card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-left: 4px solid var(--color-accent-gold);
+      border-radius: 12px;
+      padding: 1.5rem;
+      transition: var(--transition-smooth);
+    }
+
+    .zone-item:hover {
+      background: var(--color-card-hover);
+      transform: translateX(8px);
+      box-shadow: var(--shadow-card);
+    }
+
+    .zone-header {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .zone-icon {
+      color: var(--color-accent-gold);
+    }
+
+    .zone-name {
+      font-family: var(--font-title);
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--color-text-white);
+    }
+
+    .zone-details {
+      color: var(--color-text-muted);
+      font-size: 0.92rem;
+      padding-left: 2rem;
+    }
+
+    /* Mapa Ilustrativo Vectorial Moderno */
+    .map-container {
+      background: var(--color-primary-navy);
+      border: 1px solid var(--color-border);
+      border-radius: 20px;
+      padding: 2.5rem;
+      text-align: center;
+      position: relative;
+      box-shadow: var(--shadow-card);
+    }
+
+    .map-svg {
+      width: 100%;
+      height: auto;
+      max-height: 320px;
+    }
+
+    .map-pin {
+      animation: pulsePin 2s infinite;
+    }
+
+    @keyframes pulsePin {
+      0% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.15); opacity: 0.8; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+
+    /* ==========================================================================
+       SECCIÓN GALERÍA DE TRABAJOS
+       ========================================================================== */
+    .gallery {
+      padding: 6rem 0;
+      background: var(--color-primary-dark);
+    }
+
+    .gallery-filters {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 2.5rem;
+    }
+
+    .filter-btn {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      color: var(--color-text-muted);
+      padding: 0.6rem 1.4rem;
+      border-radius: 30px;
+      font-family: var(--font-title);
+      font-weight: 600;
+      font-size: 0.9rem;
+      cursor: pointer;
+      transition: var(--transition-smooth);
+    }
+
+    .filter-btn:hover, .filter-btn.active {
+      background: var(--color-accent-gold);
+      color: var(--color-primary-dark);
+      border-color: var(--color-accent-gold);
+    }
+
+    .gallery-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .gallery-item {
+      position: relative;
+      border-radius: 14px;
+      overflow: hidden;
+      aspect-ratio: 4 / 3;
+      cursor: pointer;
+      background: var(--color-card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+    }
+
+    .gallery-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s ease;
+    }
+
+    .gallery-overlay {
+      display: none;
+    }
+
+    .gallery-item:hover .gallery-img {
+      transform: scale(1.08);
+    }
+
+    .gallery-item:hover .gallery-overlay {
+      opacity: 1;
+    }
+
+    .gallery-category {
+      font-size: 0.75rem;
+      font-weight: 700;
+      color: var(--color-accent-gold);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+    }
+
+    .gallery-item-title {
+      font-family: var(--font-title);
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--color-text-white);
+    }
+
+    /* Lightbox Modal */
+    .lightbox-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0, 0, 0, 0.92);
+      z-index: 3000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition-smooth);
+    }
+
+    .lightbox-overlay.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .lightbox-content {
+      max-width: 900px;
+      width: 100%;
+      position: relative;
+      text-align: center;
+    }
+
+    .lightbox-img {
+      max-height: 80vh;
+      width: auto;
+      margin: 0 auto;
+      border-radius: 12px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.8);
+    }
+
+    .lightbox-caption {
+      margin-top: 1rem;
+      font-family: var(--font-title);
+      font-size: 1.2rem;
+      color: var(--color-text-white);
+    }
+
+    /* ==========================================================================
+       SECCIÓN OPINIONES DE CLIENTES
+       ========================================================================== */
+    .reviews {
+      padding: 6rem 0;
+      background-color: var(--color-bg-dark);
+    }
+
+    .reviews-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 2rem;
+    }
+
+    .review-card {
+      background: var(--color-card-bg);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 16px;
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: var(--transition-smooth);
+      position: relative;
+    }
+
+    .review-card:hover {
+      transform: translateY(-6px);
+      border-color: var(--color-border);
+      box-shadow: var(--shadow-card);
+    }
+
+    .review-stars {
+      color: var(--color-accent-gold);
+      font-size: 1.1rem;
+      margin-bottom: 1rem;
+      letter-spacing: 2px;
+    }
+
+    .review-text {
+      font-size: 0.98rem;
+      color: #cbd5e1;
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .review-author {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+    }
+
+    .author-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--color-primary-navy);
+      border: 2px solid var(--color-accent-gold);
+      color: var(--color-accent-gold);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--font-title);
+      font-weight: 800;
+      font-size: 1.1rem;
+    }
+
+    .author-info {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .author-name {
+      font-family: var(--font-title);
+      font-weight: 700;
+      color: var(--color-text-white);
+      font-size: 1rem;
+    }
+
+    .author-zone {
+      font-size: 0.8rem;
+      color: var(--color-text-muted);
+    }
+
+    /* ==========================================================================
+       LLAMADO A LA ACCIÓN (CTA FINAL)
+       ========================================================================== */
+    .cta-section {
+      padding: 5rem 0;
+      background: linear-gradient(135deg, var(--color-primary-navy), var(--color-primary-dark));
+      border-top: 1px solid var(--color-border);
+      border-bottom: 1px solid var(--color-border);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cta-content {
+      text-align: center;
+      max-width: 800px;
+      margin: 0 auto;
+      position: relative;
+      z-index: 2;
+    }
+
+    .cta-title {
+      font-family: var(--font-title);
+      font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+      font-weight: 800;
+      color: var(--color-text-white);
+      margin-bottom: 1rem;
+    }
+
+    .cta-text {
+      font-size: 1.15rem;
+      color: #cbd5e1;
+      margin-bottom: 2.2rem;
+      line-height: 1.7;
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    .footer {
+      background-color: #070d1e;
+      padding: 4rem 0 2rem 0;
+      color: var(--color-text-muted);
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+    }
+
+    .footer-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+
+    .footer-col-title {
+      font-family: var(--font-title);
+      color: var(--color-text-white);
+      font-size: 1.1rem;
+      font-weight: 700;
+      margin-bottom: 1.25rem;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin-bottom: 0.75rem;
+    }
+
+    .footer-links a:hover {
+      color: var(--color-accent-gold);
+    }
+
+    .social-icons {
+      display: flex;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    .social-btn {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.08);
+      color: var(--color-text-white);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: var(--transition-smooth);
+    }
+
+    .social-btn:hover {
+      background: var(--color-accent-gold);
+      color: var(--color-primary-dark);
+      transform: translateY(-3px);
+    }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 2rem;
+      text-align: center;
+      font-size: 0.88rem;
+    }
+
+    /* ==========================================================================
+       BOTONES FLOTANTES (WHATSAPP Y VOLVER ARRIBA)
+       ========================================================================== */
+    .floating-whatsapp {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      width: 60px;
+      height: 60px;
+      background-color: var(--color-whatsapp);
+      color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+      z-index: 999;
+      transition: var(--transition-smooth);
+      animation: pulseGreen 2s infinite;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.1);
+      background-color: var(--color-whatsapp-hover);
+    }
+
+    .floating-whatsapp-tooltip {
+      position: absolute;
+      right: 70px;
+      background: var(--color-card-bg);
+      color: var(--color-text-white);
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      white-space: nowrap;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      border: 1px solid var(--color-border);
+      pointer-events: none;
+      opacity: 0;
+      transition: var(--transition-smooth);
+    }
+
+    .floating-whatsapp:hover .floating-whatsapp-tooltip {
+      opacity: 1;
+    }
+
+    @keyframes pulseGreen {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7); }
+      70% { box-shadow: 0 0 0 18px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    .back-to-top {
+      position: fixed;
+      bottom: 2rem;
+      left: 2rem;
+      width: 46px;
+      height: 46px;
+      background: rgba(30, 41, 59, 0.9);
+      border: 1px solid var(--color-border);
+      color: var(--color-text-white);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      z-index: 998;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition-smooth);
+    }
+
+    .back-to-top.visible {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .back-to-top:hover {
+      background: var(--color-accent-gold);
+      color: var(--color-primary-dark);
+      transform: translateY(-4px);
+    }
+
+    /* ==========================================================================
+       MEDIA QUERIES (RESPONSIVE)
+       ========================================================================== */
+    @media (max-width: 992px) {
+      .nav-links {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 80%;
+        max-width: 320px;
+        height: 100vh;
+        background: var(--color-primary-dark);
+        border-left: 1px solid var(--color-border);
+        flex-direction: column;
+        justify-content: center;
+        padding: 3rem 2rem;
+        transition: var(--transition-smooth);
+        box-shadow: -10px 0 30px rgba(0,0,0,0.5);
+      }
+
+      .nav-links.active {
+        right: 0;
+      }
+
+      .hamburger-btn {
+        display: block;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .hero-actions {
+        flex-direction: column;
+      }
+      .btn {
+        width: 100%;
+      }
+      .modal-container {
+        padding: 1.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ==========================================================================
+       HEADER Y NAVEGACIÓN FIJA
+       ========================================================================== -->
+  <header class="header" id="header">
+    <div class="container nav-container">
+      <!-- Logo de la Empresa -->
+      <a href="#inicio" class="logo">
+        <div class="logo-icon">
+          <!-- Icono Yunque / Martillo -->
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+          </svg>
+        </div>
+        <div class="logo-text">
+          Herrería Artística <span>DCS</span>
+          <span class="logo-subtitle">Mantenimiento Integral</span>
+        </div>
+      </a>
+
+      <!-- Menú de Navegación -->
+      <nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#inicio" class="nav-link">Inicio</a></li>
+          <li><a href="#servicios" class="nav-link">Servicios</a></li>
+          <li><a href="#nosotros" class="nav-link">Por qué Elegirnos</a></li>
+          <li><a href="#zonas" class="nav-link">Zonas</a></li>
+          <li><a href="#galeria" class="nav-link">Galería</a></li>
+          <li><a href="#opiniones" class="nav-link">Opiniones</a></li>
+          <li>
+            <!--
+              EDITABLE: Número de WhatsApp en el botón del menú
+              Modificar el parámetro 'phone=5491100000000' según corresponda.
+            -->
+            <a href="https://wa.me/5491151417670?text=Hola.%20Vi%20tu%20p%C3%A1gina%20web%20y%20quisiera%20solicitar%20un%20presupuesto." target="_blank" rel="noopener noreferrer" class="btn btn-gold" style="padding: 0.5rem 1.2rem; font-size: 0.9rem;">
+              WhatsApp Directo
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Botón Hamburguesa Móvil -->
+      <button class="hamburger-btn" id="hamburgerBtn" aria-label="Abrir menú de navegación">
+        <div class="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ==========================================================================
+         HERO PRINCIPAL
+         ========================================================================== -->
+    <section class="hero" id="inicio">
+      <div class="container">
+        <div class="hero-grid">
+          <!--
+            EDITABLE: Espacio para el Logo de la Empresa.
+            Para actualizar con el logo oficial, simplemente reemplace la ruta en 'src'
+            (por ejemplo: src="images/logo.png" o src="images/logo.svg")S
+          -->
+          <div class="hero-logo-wrapper">
+            <div class="hero-logo-card">
+              <img src="images/21 herreria.jpeg" alt="Logo Herrería Artística DCS" class="hero-logo-img" width="300" height="300">
+            </div>
+          </div>
+
+          <div class="hero-content">
+            <div class="hero-tag">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg>
+              Taller Propio & Trabajos a Domicilio
+            </div>
+            
+            <h1 class="hero-title">
+              Herrería Artística <span>DCS</span>
+            </h1>
+            <h2 class="hero-subtitle">Mantenimiento Integral</h2>
+            
+            <p class="hero-description">
+              Fabricación, instalación y reparación de estructuras metálicas, techos, Durlock, pintura e impermeabilización. Trabajos garantizados con atención personalizada en <strong>Zona Oeste, Zona Norte y CABA</strong>.
+            </p>
+
+            <div class="hero-actions">
+              <!-- EDITABLE: Enlace a WhatsApp con mensaje predefinido -->
+              <a href="https://wa.me/5491151417670?text=Hola.%20Vi%20tu%20p%C3%A1gina%20web%20y%20quisiera%20solicitar%20un%20presupuesto." target="_blank" rel="noopener noreferrer" class="btn btn-gold">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+                Solicitar Presupuesto
+              </a>
+              <a href="#servicios" class="btn btn-outline">Ver Servicios</a>
+            </div>
+
+            <div class="hero-badges">
+              <div class="hero-badge-item">
+                <div class="hero-badge-icon">✓</div>
+                <!-- EDITABLE: Años de experiencia -->
+                <div class="hero-badge-text">+15 Años de Experiencia</div>
+              </div>
+              <div class="hero-badge-item">
+                <div class="hero-badge-icon">✓</div>
+                <div class="hero-badge-text">Presupuestos Sin Cargo</div>
+              </div>
+              <div class="hero-badge-item">
+                <div class="hero-badge-icon">✓</div>
+                <div class="hero-badge-text">Atención a Domicilio</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN SERVICIOS
+         ========================================================================== -->
+    <section class="services" id="servicios">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Lo Que Hacemos</span>
+          <h2 class="section-title">Servicios Especializados</h2>
+          <p class="section-subtitle">
+            Ofrecemos soluciones integrales en metalurgia, construcciones y terminaciones para viviendas, comercios e industrias.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Tarjeta 1: Herrería Artística -->
+          <div class="service-card" onclick="openModal('service-1')">
+            <div class="service-icon-wrapper">
+              <!-- Icono Rejas / Estructura -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                <path d="M3 9h18M3 15h18M9 3v18M15 3v18"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Herrería Artística de Obra y Mobiliaria</h3>
+            <p class="service-description">
+              Diseño, fabricación y colocación de portones, rejas de seguridad, puertas, barandas de escalera, balcones y muebles de hierro a medida.
+            </p>
+            <span class="service-link">
+              Ver detalles del servicio
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+
+          <!-- Tarjeta 2: Techos -->
+          <div class="service-card" onclick="openModal('service-2')">
+            <div class="service-icon-wrapper">
+              <!-- Icono Techo -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M2 18h20"></path>
+                <path d="M3 14l9-9 9 9"></path>
+                <path d="M7 10v8"></path>
+                <path d="M12 5v13"></path>
+                <path d="M17 10v8"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Techos en Chapa y Policarbonato</h3>
+            <p class="service-description">
+              Estructuras metálicas reforzadas para cocheras, galerías, patios y cerramientos con policarbonato alveolar, compacto y chapas aluminizadas.
+            </p>
+            <span class="service-link">
+              Ver detalles del servicio
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+
+          <!-- Tarjeta 3: Durlock -->
+          <div class="service-card" onclick="openModal('service-3')">
+            <div class="service-icon-wrapper">
+              <!-- Icono Paredes / Durlock -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="3" width="8" height="8" rx="1"></rect>
+                <rect x="13" y="3" width="8" height="8" rx="1"></rect>
+                <rect x="3" y="13" width="8" height="8" rx="1"></rect>
+                <rect x="13" y="13" width="8" height="8" rx="1"></rect>
+              </svg>
+            </div>
+            <h3 class="service-title">Construcción y Divisiones en Seco (Durlock)</h3>
+            <p class="service-description">
+              Instalación de cielorrasos suspendidos o junta tomada, tabiques divisorios de ambientes y revestimientos antihumedad.
+            </p>
+            <span class="service-link">
+              Ver detalles del servicio
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+
+          <!-- Tarjeta 4: Pintura -->
+          <div class="service-card" onclick="openModal('service-4')">
+            <div class="service-icon-wrapper">
+              <!-- Icono Pincel / Rodillo -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M19 11H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2z"></path>
+                <path d="M12 11v3a2 2 0 0 1-2 2H8a2 2 0 0 0-2 2v4"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Trabajos de Pintura Exterior e Interior</h3>
+            <p class="service-description">
+              Pintura anticorrosiva y epoxi para herrería, tratamiento de metales oxidados, látex de alta gama para frentes, fachadas e interiores.
+            </p>
+            <span class="service-link">
+              Ver detalles del servicio
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+
+          <!-- Tarjeta 5: Impermeabilización -->
+          <div class="service-card" onclick="openModal('service-5')">
+            <div class="service-icon-wrapper">
+              <!-- Icono Gota / Escudo -->
+              <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                <path d="M12 7a2.5 2.5 0 0 1 2.5 2.5c0 1.8-2.5 4.5-2.5 4.5s-2.5-2.7-2.5-4.5A2.5 2.5 0 0 1 12 7z"></path>
+              </svg>
+            </div>
+            <h3 class="service-title">Impermeabilización de Azoteas y Techos</h3>
+            <p class="service-description">
+              Solución definitiva para filtraciones en losas, terrazas y techos de chapa. Aplicación de membrana líquida poliuretánica y membranado asfáltico.
+            </p>
+            <span class="service-link">
+              Ver detalles del servicio
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         POR QUÉ ELEGIRNOS (VENTAJAS)
+         ========================================================================== -->
+    <section class="why-us" id="nosotros">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Garantía de Calidad</span>
+          <h2 class="section-title">¿Por Qué Elegir Herrería Artística DCS?</h2>
+          <p class="section-subtitle">
+            Combinamos técnicas de herrería tradicional con materiales de última generación para entregar proyectos duraderos y estéticamente impecables.
+          </p>
+        </div>
+
+        <div class="why-us-grid">
+          <div class="advantages-list">
+            <div class="advantage-card">
+              <div class="advantage-check">✓</div>
+              <div>
+                <h4 class="advantage-title">Atención Personalizada</h4>
+                <p class="advantage-desc">Asesoramiento directo en obra o taller para resolver tus necesidades específicas.</p>
+              </div>
+            </div>
+
+            <div class="advantage-card">
+              <div class="advantage-check">✓</div>
+              <div>
+                <h4 class="advantage-title">Materiales de Primera Calidad</h4>
+                <p class="advantage-desc">Perfiles pesados, hierro reforzado, pintura antióxido de primera línea y policarbonato con filtro UV.</p>
+              </div>
+            </div>
+
+            <div class="advantage-card">
+              <div class="advantage-check">✓</div>
+              <div>
+                <h4 class="advantage-title">Presupuestos Sin Cargo</h4>
+                <p class="advantage-desc">Evaluamos tu proyecto y cotizamos sin ningún compromiso de compra.</p>
+              </div>
+            </div>
+
+            <div class="advantage-card">
+              <div class="advantage-check">✓</div>
+              <div>
+                <h4 class="advantage-title">Terminaciones Profesionales</h4>
+                <p class="advantage-desc">Soldaduras pulidas a espejo, escuadra precisa y pulcritud durante todo el trabajo.</p>
+              </div>
+            </div>
+
+            <div class="advantage-card">
+              <div class="advantage-check">✓</div>
+              <div>
+                <h4 class="advantage-title">Compromiso con las Entregas</h4>
+                <p class="advantage-desc">Pactamos fechas de inicio y finalización para respetar strictly tus tiempos.</p>
+              </div>
+            </div>
+
+            <div class="advantage-card">
+              <div class="advantage-check">✓</div>
+              <div>
+                <h4 class="advantage-title">+15 Años de Experiencia</h4>
+                <p class="advantage-desc">Trayectoria comprobable en viviendas residenciales, galpones y locales comerciales.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN ZONAS DE TRABAJO
+         ========================================================================== -->
+    <section class="zones" id="zonas">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Cobertura Geográfica</span>
+          <h2 class="section-title">Zonas de Trabajo a Domicilio</h2>
+          <p class="section-subtitle">
+            Realizamos visitas técnicas para medición y presupuesto directamente en tu domicilio u obra.
+          </p>
+        </div>
+
+        <div class="zones-wrapper">
+          <!-- Tarjetas de Zonas -->
+          <div class="zones-cards">
+            <div class="zone-item">
+              <div class="zone-header">
+                <svg class="zone-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <h3 class="zone-name">Zona Oeste</h3>
+              </div>
+              <p class="zone-details">
+                Morón, Ramos Mejía, San Justo, Castelar, Ituzaingó, Merlo, Padua, Hurlingham, Haedo y localidades aledañas.
+              </p>
+            </div>
+
+            <div class="zone-item">
+              <div class="zone-header">
+                <svg class="zone-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <h3 class="zone-name">Zona Norte</h3>
+              </div>
+              <p class="zone-details">
+                Vicente López, Olivos, San Isidro, San Fernando, Tigre, Pilar, Escobar y barrios cerrados / country clubs.
+              </p>
+            </div>
+
+            <div class="zone-item">
+              <div class="zone-header">
+                <svg class="zone-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+                <h3 class="zone-name">CABA (Ciudad de Buenos Aires)</h3>
+              </div>
+              <p class="zone-details">
+                Palermo, Belgrano, Caballito, Villa Devoto, Nuñez, Recoleta, Flores y la totalidad de los barrios porteños.
+              </p>
+            </div>
+          </div>
+
+          <!-- Mapa Ilustrativo Vectorial -->
+          <div class="map-container">
+            <h3 style="font-family: var(--font-title); font-size: 1.3rem; margin-bottom: 1.5rem; color: var(--color-text-white);">
+              Mapa de Cobertura
+            </h3>
+            <svg class="map-svg" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <!-- Fondo del Mapa -->
+              <rect width="400" height="300" rx="12" fill="#0b132b"/>
+              
+              <!-- Línea del Río de la Plata -->
+              <path d="M180 10 Q 280 100, 390 280 L 400 280 L 400 10 Z" fill="#1c2541" opacity="0.8"/>
+              <text x="310" y="80" fill="#94a3b8" font-size="12" font-family="sans-serif">Río de la Plata</text>
+
+              <!-- Forma CABA -->
+              <path d="M200 120 L250 130 L260 180 L210 190 Z" fill="#26334d" stroke="#f59e0b" stroke-width="1.5" stroke-dasharray="3 3"/>
+              
+              <!-- Pines Interactivos -->
+              <!-- CABA -->
+              <g class="map-pin">
+                <circle cx="230" cy="155" r="10" fill="#f59e0b" opacity="0.3"/>
+                <circle cx="230" cy="155" r="5" fill="#f59e0b"/>
+                <text x="242" y="160" fill="#ffffff" font-size="12" font-weight="bold">CABA</text>
+              </g>
+
+              <!-- Zona Norte -->
+              <g class="map-pin">
+                <circle cx="160" cy="70" r="10" fill="#fbbf24" opacity="0.3"/>
+                <circle cx="160" cy="70" r="5" fill="#fbbf24"/>
+                <text x="70" y="75" fill="#ffffff" font-size="12" font-weight="bold">Zona Norte</text>
+              </g>
+
+              <!-- Zona Oeste -->
+              <g class="map-pin">
+                <circle cx="120" cy="180" r="10" fill="#fbbf24" opacity="0.3"/>
+                <circle cx="120" cy="180" r="5" fill="#fbbf24"/>
+                <text x="35" y="185" fill="#ffffff" font-size="12" font-weight="bold">Zona Oeste</text>
+              </g>
+            </svg>
+            <p style="color: var(--color-text-muted); font-size: 0.85rem; margin-top: 1rem;">
+              📍 Coordinamos visitas a domicilio en el día para relevamientos técnicos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         GALERÍA DE TRABAJOS REALIZADOS
+         ========================================================================== -->
+    <section class="gallery" id="galeria">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Proyectos Recientes</span>
+          <h2 class="section-title">Galería de Trabajos</h2>
+          <p class="section-subtitle">
+            Explorá algunas de nuestras obras finalizadas. Hacé clic en cualquier imagen para verla ampliada.
+          </p>
+        </div>
+
+        <!-- Filtros de Galería -->
+        <div class="gallery-filters">
+          <button class="filter-btn active" data-filter="all">Todos</button>
+          <button class="filter-btn" data-filter="herreria">Herrería</button>
+          <button class="filter-btn" data-filter="techos">Techos</button>
+          <button class="filter-btn" data-filter="durlock">Durlock</button>
+          <button class="filter-btn" data-filter="pintura">Pintura e Impermeabilización</button>
+        </div>
+
+        <!-- Rejilla de Imágenes -->
+        <div class="gallery-grid" id="galleryGrid">
+          <!-- Item 1: Portón de Hierro (Generado) -->
+          <div class="gallery-item" data-category="herreria" onclick="openLightbox('images/8 herreria.jpg')">
+            <img src="images/8 herreria.jpg" alt="Portón artístico de hierro" class="gallery-img" loading="lazy" referrerPolicy="no-referrer">
+            <div class="gallery-overlay">
+            </div>
+          </div>
+
+          <!-- Item 2: Techo Policarbonato (Generado) -->
+          <div class="gallery-item" data-category="techos" onclick="openLightbox('images/10 herreria.jpg')">
+            <img src="images/10 herreria.jpg" alt="Techo de policarbonato" class="gallery-img" loading="lazy" referrerPolicy="no-referrer">
+            <div class="gallery-overlay">
+            </div>
+          </div>
+
+          <!-- Item 3: Durlock Interior (Generado) -->
+          <div class="gallery-item" data-category="durlock" onclick="openLightbox('images/4 herreria.jpg')">
+            <img src="images/4 herreria.jpg" alt="Trabajo de Durlock" class="gallery-img" loading="lazy" referrerPolicy="no-referrer">
+            <div class="gallery-overlay">
+            </div>
+          </div>
+
+          <!-- Item 4: Reja de Seguridad -->
+          <div class="gallery-item" data-category="herreria" onclick="openLightbox('images/7 herreria.jpg')">
+            <img src="images/7 herreria.jpg" alt="Reja de seguridad" class="gallery-img" loading="lazy" referrerPolicy="no-referrer">
+            <div class="gallery-overlay">
+            </div>
+          </div>
+
+          <!-- Item 5: Techo de Chapa -->
+          <div class="gallery-item" data-category="techos" onclick="openLightbox('images/5 herreria.jpg')">
+            <img src="images/5 herreria.jpg" alt="Estructura para cochera" class="gallery-img" loading="lazy" referrerPolicy="no-referrer">
+            <div class="gallery-overlay">
+            </div>
+          </div>
+
+          <!-- Item 6: Pintura Industrial -->
+          <div class="gallery-item" data-category="pintura" onclick="openLightbox('images/2 herreria.jpg')">
+            <img src="images/2 herreria.jpg" alt="Trabajo de pintura anticorrosiva" class="gallery-img" loading="lazy" referrerPolicy="no-referrer">
+            <div class="gallery-overlay">
+            </div>
+          </div>
+
+          <!-- Item 7: Impermeabilización -->
+          <div class="gallery-item" data-category="pintura" onclick="openLightbox('images/3 herreria.jpg')">
+            <img src="images/3 herreria.jpg" alt="Impermeabilización de azotea" class="gallery-img" loading="lazy" referrerPolicy="no-referrer">
+            <div class="gallery-overlay">
+            </div>
+          </div>
+
+          <!-- Item 8: Baranda Artística -->
+          <div class="gallery-item" data-category="herreria" onclick="openLightbox('images/9 herreria.jpg', 'Baranda de Hierro Forjado para Escalera')">
+            <img src="images/9 herreria.jpg" class="gallery-img" loading="lazy" referrerPolicy="no-referrer">
+            <div class="gallery-overlay">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         SECCIÓN OPINIONES DE CLIENTES (TESTIMONIOS)
+         ========================================================================== -->
+    <section class="reviews" id="opiniones">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-badge">Testimonios Reales</span>
+          <h2 class="section-title">Lo Que Dicen Nuestros Clientes</h2>
+          <p class="section-subtitle">
+            La satisfacción y recomendación de nuestros clientes es nuestra mejor carta de presentación.
+          </p>
+        </div>
+
+        <div class="reviews-grid">
+          <!-- Opinión 1 -->
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "Gracias Diego! Segundo trabajo realizado y la misma excelencia y profesionalidad!!! Mil Gracias!."
+              </p>
+            </div>
+            <div class="review-author">
+              <div class="author-avatar">A</div>
+              <div class="author-info">
+                <span class="author-name">Ariel D'Onofrio</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Opinión 2 -->
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "Excelente atención! No soy de la zona, me había olvidado la amoladora para cortar unos caños, y Diego me resolvió el problema inmediatamente! Super recomendable!."
+              </p>
+            </div>
+            <div class="review-author">
+              <div class="author-avatar">H</div>
+              <div class="author-info">
+                <span class="author-name">Hernan Rodrigo Torres</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Opinión 3 -->
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "Excelentes los trabajos realizados en mi caso, y lo e recomendado y fue valorado 10 puntos. Exelente persona muy responsable y de mi mayor confianza.."
+              </p>
+            </div>
+            <div class="review-author">
+              <div class="author-avatar">O</div>
+              <div class="author-info">
+                <span class="author-name">Oscar Antonio</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Opinión 4 -->
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "Quiero agradecer a Herrería DCS por su buen trabajo; fueron prolijos, cumplieron con los tiempos y estoy muy conforme con el resultado."
+              </p>
+            </div>
+            <div class="review-author">
+              <div class="author-avatar">M</div>
+              <div class="author-info">
+                <span class="author-name">Maria Eugenia Orlando</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Opinión 5 -->
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "Es para recomendar cumplió con las fechas acordadas, hizo muy bien el trabajo de las rejas , prolijo y dispuesto a explicarte lo que te conviene para ahorrarse unos pesos.."
+              </p>
+            </div>
+            <div class="review-author">
+              <div class="author-avatar">I</div>
+              <div class="author-info">
+                <span class="author-name">Ines Beatriz Biusso</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Opinión 6 -->
+          <div class="review-card">
+            <div>
+              <div class="review-stars">★★★★★</div>
+              <p class="review-text">
+                "Exelente trabajo!!!! Me instaló unas rejas y super prolijo y cumplió en tiempo y forma. Quedamos más que conformes .Muy recomendable."
+              </p>
+            </div>
+            <div class="review-author">
+              <div class="author-avatar">L</div>
+              <div class="author-info">
+                <span class="author-name">Lujan Donofrio</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==========================================================================
+         LLAMADO A LA ACCIÓN FINAL
+         ========================================================================== -->
+    <section class="cta-section">
+      <div class="container">
+        <div class="cta-content">
+          <h2 class="cta-title">¿Necesitás un presupuesto?</h2>
+          <p class="cta-text">
+            Realizamos trabajos de herrería y mantenimiento integral con materiales de calidad y atención personalizada.
+          </p>
+          <!-- EDITABLE: Enlace a WhatsApp -->
+          <a href="https://wa.me/5491151417670?text=Hola.%20Vi%20tu%20p%C3%A1gina%20web%20y%20quisiera%20solicitar%20un%20presupuesto." target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="padding: 1.1rem 2.2rem; font-size: 1.1rem;">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+            Solicitar Presupuesto por WhatsApp
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ==========================================================================
+       FOOTER
+       ========================================================================== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <!-- Columna 1: Info Empresa -->
+        <div>
+          <div class="logo" style="margin-bottom: 1rem;">
+            <div class="logo-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg>
+            </div>
+            <div class="logo-text">
+              Herrería Artística <span>DCS</span>
+            </div>
+          </div>
+          <p style="font-size: 0.9rem; line-height: 1.6;">
+            Mantenimiento Integral en herreria de obra, techos, Durlock, pintura e impermeabilización.
+          </p>
+        </div>
+
+        <!-- Columna 2: Zonas -->
+        <div>
+          <h4 class="footer-col-title">Zonas de Atención</h4>
+          <p style="font-size: 0.9rem; color: var(--color-accent-gold); font-weight: 600;">
+            Zona Oeste • Zona Norte • CABA
+          </p>
+          <p style="font-size: 0.85rem; margin-top: 0.5rem;">
+            Atención en taller y servicios a domicilio.
+          </p>
+        </div>
+
+        <!-- Columna 3: Contacto y Redes -->
+        <div>
+          <h4 class="footer-col-title">Contacto & Redes</h4>
+          <ul class="footer-links">
+            <li>
+              <a href="https://wa.me/5491151417670?text=Hola.%20Vi%20tu%20p%C3%A1gina%20web%20y%20quisiera%20solicitar%20un%20presupuesto." target="_blank" rel="noopener noreferrer">
+                📱 WhatsApp: +54 9 11 5141-7670
+              </a>
+            </li>
+          </ul>
+
+          <div class="social-icons">
+            <!-- Icono Instagram -->
+            <a href="https://www.instagram.com/herreriadcs?igsh=ejBybTVxNnhlZWJ" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </a>
+            <!-- Icono Facebook -->
+            <a href="https://www.facebook.com/share/1C1vFWyNmW/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+            </a>
+            <!-- Icono Google Maps -->
+            <a href="https://maps.app.goo.gl/pnDYAcYNwzcpyTjk7" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Google Maps">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s7-6.1 7-12a7 7 0 1 0-14 0c0 5.9 7 12 7 12z"></path><circle cx="12" cy="9" r="2.5"></circle></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; <span id="year">2026</span> Herrería Artística DCS - Mantenimiento Integral. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       ELEMENTOS FLOTANTES
+       ========================================================================== -->
+  <!-- Botón Flotante de WhatsApp -->
+  <a href="https://wa.me/5491151417670?text=Hola.%20Vi%20tu%20p%C3%A1gina%20web%20y%20quisiera%20solicitar%20un%20presupuesto." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Contactar por WhatsApp">
+    <svg width="32" height="32" viewBox="0 0 24 24" fill="currentColor"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+    <span class="floating-whatsapp-tooltip">¡Consultanos por WhatsApp!</span>
+  </a>
+
+  <!-- Botón Volver Arriba -->
+  <button class="back-to-top" id="backToTopBtn" aria-label="Volver arriba">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <!-- ==========================================================================
+       MODAL DE DETALLES DE SERVICIO
+       ========================================================================== -->
+  <div class="modal-overlay" id="serviceModal">
+    <div class="modal-container">
+      <button class="modal-close" onclick="closeModal('serviceModal')">&times;</button>
+      <div class="modal-header-icon" id="modalIcon"></div>
+      <h3 class="modal-title" id="modalTitle"></h3>
+      <p class="modal-body-text" id="modalDescription"></p>
+      <ul class="modal-list" id="modalList"></ul>
+      <a id="modalCta" href="#" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp" style="width: 100%;">
+        Pedir Presupuesto para este Servicio
+      </a>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       LIGHTBOX DE GALERÍA DE IMÁGENES
+       ========================================================================== -->
+  <div class="lightbox-overlay" id="lightboxModal">
+    <div class="lightbox-content">
+      <button class="modal-close" onclick="closeModal('lightboxModal')" style="top: -40px; right: 0;">&times;</button>
+      <img src="" alt="" class="lightbox-img" id="lightboxImage">
+      <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
+  </div>
+
+  <!-- ==========================================================================
+       JAVASCRIPT
+       ========================================================================== -->
+  <script>
+    // 1. Datos de los Servicios para el Modal
+    const serviceDetails = {
+      'service-1': {
+        title: 'Herrería Artística de Obra y Mobiliaria',
+        icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"></rect><path d="M3 9h18M3 15h18M9 3v18M15 3v18"></path></svg>',
+        desc: 'Especialistas en herrería de diseño a medida. Diseñamos, forjamos e instalamos piezas únicas que combinan máxima seguridad con estética refinada.',
+        items: [
+          'Portones corredizos, levadizos y automatizados',
+          'Rejas de seguridad para ventanas, puertas y frentes',
+          'Barandas de escalera, balcones y protecciones para piletas',
+          'Muebles metálicos de diseño (mesas, estanterías, pérgolas)',
+          'Estructuras metálicas reforzadas con tratamiento antióxido'
+        ]
+      },
+      'service-2': {
+        title: 'Techos en Chapa y Policarbonato',
+        icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 18h20"></path><path d="M3 14l9-9 9 9"></path><path d="M7 10v8"></path><path d="M12 5v13"></path><path d="M17 10v8"></path></svg>',
+        desc: 'Fabricación y colocación de techos y cerramientos resistentes a la intemperie, ideales para aprovechar al máximo galerías, cocheras y patios.',
+        items: [
+          'Policarbonato alveolar y compacto con protección UV',
+          'Chapas trapezoidales y acanaladas aluminizadas',
+          'Estructuras de perfilería tubulares pesadas',
+          'Desagües pluviales, canaletas y cenefas integradas',
+          'Reparación y recambio de chapas deterioradas'
+        ]
+      },
+      'service-3': {
+        title: 'Construcción y Divisiones en Seco (Durlock)',
+        icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="8" height="8" rx="1"></rect><rect x="13" y="3" width="8" height="8" rx="1"></rect><rect x="3" y="13" width="8" height="8" rx="1"></rect><rect x="13" y="13" width="8" height="8" rx="1"></rect></svg>',
+        desc: 'Soluciones rápidas, limpias y eficientes para renovar o redistribuir ambientes interiores con placas de yeso de primera marca.',
+        items: [
+          'Cielorrasos suspendidos y desmontables',
+          'Tabiques divisorios de ambientes acústicos e ignífugos',
+          'Revestimientos antihumedad sobre paredes con filtraciones',
+          'Terminación lista para pintar con tomado de juntas'
+        ]
+      },
+      'service-4': {
+        title: 'Trabajos de Pintura Exterior e Interior',
+        icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 11H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2z"></path><path d="M12 11v3a2 2 0 0 1-2 2H8a2 2 0 0 0-2 2v4"></path></svg>',
+        desc: 'Servicios de pintura profesional para proteger metales, renovar fachadas e interiores con acabados duraderos.',
+        items: [
+          'Tratamiento de remoción de óxido en estructuras de hierro',
+          'Pintura sintética, epoxi y esmaltes convertir de primera línea',
+          'Pintura en altura para fachadas, medianeras y frentes',
+          'Látex lavable, barnices y terminaciones para interiores',
+          'Limpieza y lijado previo minucioso para máxima adherencia'
+        ]
+      },
+      'service-5': {
+        title: 'Impermeabilización de Azoteas y Techos',
+        icon: '<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path><path d="M12 7a2.5 2.5 0 0 1 2.5 2.5c0 1.8-2.5 4.5-2.5 4.5s-2.5-2.7-2.5-4.5A2.5 2.5 0 0 1 12 7z"></path></svg>',
+        desc: 'Tratamientos hidrófugos de alta efectividad para evitar goteras, filtraciones y manchas de humedad en losas y cubiertas.',
+        items: [
+          'Aplicación de membrana líquida poliuretánica de alta elasticidad',
+          'Sellado de grietas, fisuras, babetas y uniones',
+          'Tratamiento impermeabilizante para azoteas transitables',
+          'Garantía escrita de estanqueidad'
+        ]
+      }
+    };
+
+    // 2. Control de Header y Botón Volver Arriba al hacer Scroll
+    const header = document.getElementById('header');
+    const backToTopBtn = document.getElementById('backToTopBtn');
+
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 80) {
+        header.classList.add('scrolled');
+        backToTopBtn.classList.add('visible');
+      } else {
+        header.classList.remove('scrolled');
+        backToTopBtn.classList.remove('visible');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // 3. Menú Hamburguesa Móvil
+    const hamburgerBtn = document.getElementById('hamburgerBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    hamburgerBtn.addEventListener('click', () => {
+      hamburgerBtn.classList.toggle('active');
+      navLinks.classList.toggle('active');
+    });
+
+    // Cerrar menú al hacer clic en un enlace
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburgerBtn.classList.remove('active');
+        navLinks.classList.remove('active');
+      });
+    });
+
+    // 4. Modales de Servicios
+    function openModal(serviceKey) {
+      const data = serviceDetails[serviceKey];
+      if (!data) return;
+
+      document.getElementById('modalIcon').innerHTML = data.icon;
+      document.getElementById('modalTitle').textContent = data.title;
+      document.getElementById('modalDescription').textContent = data.desc;
+
+      const listContainer = document.getElementById('modalList');
+      listContainer.innerHTML = '';
+      data.items.forEach(item => {
+        const li = document.createElement('li');
+        li.innerHTML = `<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"></polyline></svg> <span>${item}</span>`;
+        listContainer.appendChild(li);
+      });
+
+      const cta = document.getElementById('modalCta');
+      cta.href = `https://wa.me/5491151417670?text=Hola.%20Vi%20tu%20p%C3%A1gina%20web%20y%20quisiera%20pedir%20presupuesto%20para%20${encodeURIComponent(data.title)}`;
+
+      document.getElementById('serviceModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    // 5. Lightbox para la Galería de Imágenes
+    function openLightbox(imgSrc, caption) {
+      document.getElementById('lightboxImage').src = imgSrc;
+      document.getElementById('lightboxModal').classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal(modalId) {
+      document.getElementById(modalId).classList.remove('active');
+      document.body.style.overflow = 'auto';
+    }
+
+    // Cerrar modal al hacer clic en el fondo
+    document.querySelectorAll('.modal-overlay, .lightbox-overlay').forEach(overlay => {
+      overlay.addEventListener('click', (e) => {
+        if (e.target === overlay) {
+          overlay.classList.remove('active');
+          document.body.style.overflow = 'auto';
+        }
+      });
+    });
+
+    // 6. Filtros de Galería
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const galleryItems = document.querySelectorAll('.gallery-item');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filterValue = btn.getAttribute('data-filter');
+
+        galleryItems.forEach(item => {
+          if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+            item.style.display = 'block';
+          } else {
+            item.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // 7. Año Dinámico en Footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

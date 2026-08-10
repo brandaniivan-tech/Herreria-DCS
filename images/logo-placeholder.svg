@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 300" width="300" height="300">
+  <defs>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="silverGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="50%" stop-color="#94a3b8"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+    <linearGradient id="darkBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="10" flood-color="#000000" flood-opacity="0.5"/>
+    </filter>
+  </defs>
+
+  <!-- Marco del Placeholder -->
+  <rect x="10" y="10" width="280" height="280" rx="28" fill="url(#darkBg)" stroke="url(#goldGrad)" stroke-width="2.5" filter="url(#shadow)" opacity="0.95"/>
+  
+  <!-- Anillos decorativos de herrería -->
+  <circle cx="150" cy="125" r="75" fill="none" stroke="url(#silverGrad)" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.4"/>
+  <circle cx="150" cy="125" r="65" fill="none" stroke="url(#goldGrad)" stroke-width="2" opacity="0.8"/>
+
+  <!-- Ícono Emblemático de Yunque y Martillo DCS -->
+  <g transform="translate(150, 115)">
+    <!-- Yunque -->
+    <path d="M-35,-15 L35,-15 L25,0 L32,0 C40,0 40,12 28,15 L18,15 L12,32 L-22,32 L-16,15 L-35,15 Z" fill="url(#silverGrad)"/>
+    <!-- Detalle dorado del Yunque -->
+    <path d="M-35,-15 L35,-15 L25,-8 L-25,-8 Z" fill="url(#goldGrad)" opacity="0.8"/>
+    <!-- Martillo cruzado -->
+    <g transform="rotate(-30)">
+      <rect x="-6" y="-38" width="12" height="20" rx="2" fill="url(#goldGrad)"/>
+      <rect x="-3" y="-18" width="6" height="42" rx="1" fill="url(#silverGrad)"/>
+    </g>
+  </g>
+
+  <!-- Texto del Logo Placeholder -->
+  <text x="150" y="210" text-anchor="middle" fill="#ffffff" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="22" letter-spacing="3">DCS</text>
+  <text x="150" y="230" text-anchor="middle" fill="#f59e0b" font-family="system-ui, -apple-system, sans-serif" font-weight="700" font-size="11" letter-spacing="1.5">HERRERÍA ARTÍSTICA</text>
+  
+  <!-- Indicador para reemplazar -->
+  <rect x="45" y="250" width="210" height="22" rx="11" fill="rgba(245, 158, 11, 0.15)" stroke="rgba(245, 158, 11, 0.4)" stroke-width="1"/>
+  <text x="150" y="264" text-anchor="middle" fill="#fbbf24" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="9" letter-spacing="0.5">[ LOGO OFICIAL - 300x300 PX ]</text>
+</svg>
