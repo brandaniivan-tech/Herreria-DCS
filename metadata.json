@@ -1,0 +1,6 @@
+{
+  "name": "Herrería Artística DCS",
+  "description": "Página web moderna, elegante y profesional para Herrería Artística DCS - Mantenimiento Integral en Zona Oeste, Zona Norte y CABA.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
